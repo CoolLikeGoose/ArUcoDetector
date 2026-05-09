@@ -100,7 +100,7 @@ void ArucoProcess(uint8_t* rgba, int width, int height)
     // Refine corners
     if (!g_corners.empty())
     {
-        cv::Size winSize(5, 5);  // окно поиска
+        cv::Size winSize(5, 5);
         cv::Size zeroZone(-1, -1);
         cv::TermCriteria criteria(
             cv::TermCriteria::EPS + cv::TermCriteria::COUNT, 
